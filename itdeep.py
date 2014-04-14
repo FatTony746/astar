@@ -2,7 +2,7 @@
 CS 321 Assignment 1 Part 2
 Written By: Miles Douglas and Tony Tran
 
-		Run 1       Run 2
+		    Run 1       Run 2
 Total(d-1)	0.14679779	0.175899149
 	
 		0   0.001228423	0.005221165
@@ -41,6 +41,7 @@ def itdeep(state):
 	startNode = Node(state, [state])
 	limit = 0
 	while(not found):
+		print "LIMIT = ", limit
 		# print time.clock() - t
 		# t = time.clock()
 		found = limitedDFS(startNode, limit)
